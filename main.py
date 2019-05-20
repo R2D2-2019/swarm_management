@@ -3,7 +3,7 @@ from sys import platform
 import signal
 
 from client.comm import Comm
-from modules.swarm_managment.module.swarm_managment import Module
+from modules.swarm_management.module.swarm_management import Module
 
 should_stop = False
 

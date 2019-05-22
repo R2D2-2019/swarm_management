@@ -5,10 +5,10 @@ class command():
     def __init__(self, command_type, parameters :[str], destination: [str]):
         self.parameters :[str] = parameters
         self.destinations :[str] = destination
-        self.intelligent :str
-        self.cmd_id :int
-        self.status :int
-        self.output_frames :FrameType
+        self.intelligent :str = None
+        self.cmd_id :int = None
+        self.status :int = None
+        self.output_frames :FrameType = None
 
     def check_command_type(self):
         pass

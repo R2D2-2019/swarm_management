@@ -2,10 +2,11 @@ from common.frame_enum import FrameType
 
 
 class command():
-    def __init__(self, command_type, parameters :[str], destination: [str]):
+    def __init__(self, original_command : [str], parameters :[str], destination: [str]):
+        self.original_command : [str] = original_command
         self.parameters :[str] = parameters
         self.destinations :[str] = destination
-        self.intelligent :str = None
+        self.intelligent :bool = None
         self.cmd_id :int = None
         self.status :int = None
         self.output_frames :FrameType = None
